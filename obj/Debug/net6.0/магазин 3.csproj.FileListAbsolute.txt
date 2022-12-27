@@ -1,0 +1,17 @@
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.csproj.AssemblyReference.cache
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.GeneratedMSBuildEditorConfig.editorconfig
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.AssemblyInfoInputs.cache
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.AssemblyInfo.cs
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.csproj.CoreCompileInputs.cache
+D:\проекты визуал студио\магазин 3\bin\Debug\net6.0\магазин 3.exe
+D:\проекты визуал студио\магазин 3\bin\Debug\net6.0\магазин 3.deps.json
+D:\проекты визуал студио\магазин 3\bin\Debug\net6.0\магазин 3.runtimeconfig.json
+D:\проекты визуал студио\магазин 3\bin\Debug\net6.0\магазин 3.dll
+D:\проекты визуал студио\магазин 3\bin\Debug\net6.0\магазин 3.pdb
+D:\проекты визуал студио\магазин 3\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.csproj.CopyComplete
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.dll
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\refint\магазин 3.dll
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.pdb
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\магазин 3.genruntimeconfig.cache
+D:\проекты визуал студио\магазин 3\obj\Debug\net6.0\ref\магазин 3.dll
