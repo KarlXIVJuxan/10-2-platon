@@ -18,9 +18,9 @@ namespace магазин_3
             Console.WriteLine("Пароль: ");
             Console.SetCursorPosition(2, 4);
             Console.WriteLine("Вход");
-            List<логин_пароль> u = json_говно.Mydeserial<List<логин_пароль>>("Logins.json");
+            List<логин_пароль> u = Json_говно.Mydeserial<List<логин_пароль>>("Logins.json") ?? new List<логин_пароль>();
             логин_пароль omy = new логин_пароль();
-            List<Basa> rtx = json_говно.Mydeserial<List<Basa>>("Basa.json");
+            List<Basa> rtx = Json_говно.Mydeserial<List<Basa>>("Basa.json");
             while (true)
             {
                 int selected = Стрелки.Checker(2, 3, u, "");
@@ -33,7 +33,7 @@ namespace магазин_3
                 }
                 else if (selected == 3)
                 {
-                    yu = Update(omy.Password, "Пароль:   ");
+                    yu = Update(omy.Password, "Пароль:  ");
                 }
                 else if (selected == 4)
                 {

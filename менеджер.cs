@@ -9,6 +9,9 @@ namespace магазин_3
 {
     internal class менеджер : контроллер
     {
+        public string Username = "менеджер";
+        public string Password = "1234";
+
         static string o;
         static int aa;
         public static void Manager_menu(string b, int q)
@@ -31,7 +34,7 @@ namespace магазин_3
             Console.WriteLine("Отчество");
             Console.SetCursorPosition(85, 2);
             Console.WriteLine("Должность");
-            List<Basa> u = json_говно.Mydeserial<List<Basa>>("Basa.json");
+            List<Basa> u = Json_говно.Mydeserial<List<Basa>>("Basa.json");
             Basa login = new Basa();
             Basa basa = new Basa();
             int i = 3;
@@ -195,7 +198,7 @@ namespace магазин_3
                         }
                         else if (selected == -9)
                         {
-                            json_говно.MySeri(u, "Basa.json");
+                            Json_говно.MySeri(u, "Basa.json");
                             менеджер.Manager_menu(b, q);
                         }
                     }
@@ -300,7 +303,7 @@ namespace магазин_3
                     else if (new_sel == -9)
                     {
                         u.Add(basa);
-                        json_говно.MySeri(u, "Basa.json");
+                        Json_говно.MySeri(u, "Basa.json");
                         менеджер.Manager_menu(b, q);
 
                     }

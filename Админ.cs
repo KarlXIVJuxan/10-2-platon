@@ -9,6 +9,8 @@ namespace магазин_3
 {
     internal class Админ : контроллер
     {
+        public string Username = "админ";
+        public string Password = "12345";
         public static int selected;
         public static void AdminLobby(string name, int d)
         {
@@ -26,7 +28,7 @@ namespace магазин_3
             Console.WriteLine("Пароль");
             Console.SetCursorPosition(38, 2);
             Console.WriteLine("Post");
-            List<логин_пароль> u = json_говно.Mydeserial<List<логин_пароль>>("Logins.json");
+            List<логин_пароль> u = Json_говно.Mydeserial<List<логин_пароль>>("Logins.json");
             логин_пароль login = new логин_пароль();
 
             int i = 3;
@@ -144,7 +146,7 @@ namespace магазин_3
                         }
                         else if (selected == -9)
                         {
-                            json_говно.MySeri(u, "Logins.json");
+                            Json_говно.MySeri(u, "Logins.json");
                             AdminLobby(name, d);
 
                         }
@@ -219,7 +221,7 @@ namespace магазин_3
                     else if (new_sel == -9)
                     {
                         u.Add(login);
-                        json_говно.MySeri(u, "Logins.json");
+                        Json_говно.MySeri(u, "Logins.json");
                         Админ.AdminLobby(u[0].Username, d);
                     }
                     else if (new_sel == -10)

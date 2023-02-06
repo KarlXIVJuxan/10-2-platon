@@ -8,6 +8,9 @@ namespace магазин_3
 {
     internal class Кассир
     {
+        public string Username = "кассир";
+        public string Password = "1";
+
         static double w;
         static int l;
         public static void Cashier_Menu(string g, int rota, int r = 0)
@@ -33,7 +36,7 @@ namespace магазин_3
                 Console.WriteLine("|");
                 t++;
             }
-            List<Tovar> tovars = json_говно.Mydeserial<List<Tovar>>("Tovar.json");
+            List<Tovar> tovars = Json_говно.Mydeserial<List<Tovar>>("Tovar.json");
 
             Console.SetCursorPosition(97, 3);
             Console.WriteLine("S - завершить покупку ");
@@ -112,7 +115,7 @@ namespace магазин_3
                         w = w + tovars[Админ.selected - 3].p * tovars[Админ.selected - 3].priceFor1;
                         l = l + tovars[Админ.selected - 3].p;
                         tovars[Админ.selected - 3].p = l;
-                        json_говно.MySeri(tovars, "Tovar.json");
+                        Json_говно.MySeri(tovars, "Tovar.json");
                         Cashier_Menu(g, rota, tovars[Админ.selected - 3].p);
                     }
                 }
@@ -123,7 +126,7 @@ namespace магазин_3
             }
             else if (Админ.selected == -9)
             {
-                List<Buh_uchyot> u = json_говно.Mydeserial<List<Buh_uchyot>>("Buh.json");
+                List<Buh_uchyot> u = Json_говно.Mydeserial<List<Buh_uchyot>>("Buh.json");
                 foreach (Tovar tovar in tovars)
                 {
                     Buh_uchyot buh_Uchyot = new Buh_uchyot();
@@ -133,7 +136,7 @@ namespace магазин_3
                     buh_Uchyot.time = DateTime.Now;
                     buh_Uchyot.tf = true;
                     u.Add(buh_Uchyot);
-                    json_говно.MySeri(u, "Buh.json");
+                    Json_говно.MySeri(u, "Buh.json");
                 }
                 w = 0;
                 int k = 3;
@@ -149,7 +152,7 @@ namespace магазин_3
                 {
                     tovar.p = 0;
                     tovar.pokupka = 0;
-                    json_говно.MySeri(tovars, "Tovar.json");
+                    Json_говно.MySeri(tovars, "Tovar.json");
                 }
                 Админ.selected = Стрелки.Checker(3, tovars.Count, tovars, "Tovar.json");
                 if (Админ.selected == -10)

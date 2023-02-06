@@ -20,7 +20,7 @@ namespace магазин_3
         public static void Delete<T>(List<T> д, string file)
         {
             д.RemoveAt(Админ.selected - 3);
-            json_говно.MySeri(д, file);
+            Json_говно.MySeri(д, file);
             return;
         }
     }

@@ -10,13 +10,16 @@ namespace магазин_3
 {
     internal class складовщик : контроллер
     {
+        public string Username = "складовщик";
+        public string Password = "12";
+
         static string o;
         static int aa;
         public static void Sklad_menu(string q, int qq)
         {
             o = q;
             aa = qq;
-            List<Tovar> list = json_говно.Mydeserial<List<Tovar>>("Tovar.json");
+            List<Tovar> list = Json_говно.Mydeserial<List<Tovar>>("Tovar.json");
             Tovar tovar = new Tovar();
 
             Console.Clear();
@@ -140,7 +143,7 @@ namespace магазин_3
                         }
                         else if (selected == -9)
                         {
-                            json_говно.MySeri(list, "Tovar.json");
+                            Json_говно.MySeri(list, "Tovar.json");
                             Sklad_menu(q, qq);
                         }
                         else if (selected == -10)
@@ -208,7 +211,7 @@ namespace магазин_3
                     else if (selected == -9)
                     {
                         list.Add(tovar);
-                        json_говно.MySeri(list, "Tovar.json");
+                        Json_говно.MySeri(list, "Tovar.json");
                         Sklad_menu(q, qq);
                     }
                     else if (selected == -10)

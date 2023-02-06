@@ -12,6 +12,22 @@ namespace магазин_3
         public string Password;
         public string Username;
         public int Post;
+        public List<string> all_Password = new List<string>()
+        {
+            "12345",
+            "1234",
+            "123",
+            "12",
+            "1"
+        };
+        public List<string> all_Username = new List<string>()
+        {
+            "админ",
+            "менеджер",
+            "бухгалтер",
+            "складовщик",
+            "кассир"
+        };
     }
     internal class Basa : логин_пароль
     {

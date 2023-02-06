@@ -8,6 +8,8 @@ namespace магазин_3
 {
     internal class Бухгалтер : контроллер
     {
+        public string Username = "бухналтер";
+        public string Password = "123";
         static string o;
         static int aa;
         static double l;
@@ -33,7 +35,7 @@ namespace магазин_3
             Console.SetCursorPosition(85, 2);
             Console.WriteLine("Прибавка?");
 
-            List<Buh_uchyot> u = json_говно.Mydeserial<List<Buh_uchyot>>("Buh.json");
+            List<Buh_uchyot> u = Json_говно.Mydeserial<List<Buh_uchyot>>("Buh.json");
             var h = u.Count + 8;
             l = 0;
             int i = 3;
@@ -175,7 +177,7 @@ namespace магазин_3
                         }
                         else if (selected == -9)
                         {
-                            json_говно.MySeri(u, "Buh.json");
+                            Json_говно.MySeri(u, "Buh.json");
                             Buhoe_menu(g, rota);
                         }
                         else if (selected == -10)
@@ -259,7 +261,7 @@ namespace магазин_3
                     else if (selected == -9)
                     {
                         u.Add(buh_);
-                        json_говно.MySeri(u, "Buh.json");
+                        Json_говно.MySeri(u, "Buh.json");
                         Buhoe_menu(g, rota);
                     }
                     else if (selected == -10)
